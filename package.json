@@ -2,7 +2,8 @@
   "name": "ndarray",
   "version": "1.0.19",
   "description": "Multidimensional Arrays",
-  "main": "ndarray.js",
+  "main": "dist/ndarray.js",
+  "browser": "dist/ndarray-browser.js",  
   "directories": {
     "test": "test"
   },
@@ -14,10 +15,13 @@
     "permutation-rank": "^1.0.0",
     "dup": "^1.0.0",
     "invert-permutation": "^1.0.0",
-    "tape": "^2.12.3"
+    "tape": "^2.12.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^4.2.0"
   },
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "tape test/*.js",
+    "build-browser": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
