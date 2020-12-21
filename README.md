@@ -242,6 +242,10 @@ var blue  = image.pick(null, null, 2)
 
 As the above example illustrates, passing a negative or non-numeric value to a coordinate in pick skips that index.
 
+## Building
+
+You can build the webpack version by running ``docker run -it -w /usr/local/app -v $PWD:/usr/local/app node:13.14-stretch yarn run build-browser``
+
 # More information
 
 For more discussion about ndarrays, here are some talks, tutorials and articles about them:
